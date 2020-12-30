@@ -1,0 +1,21 @@
+Based on the mapping spreadsheet we decided to extract from the 
+Sales_Area, THE Sales_Mgr, THE Sales_Territory,THE Sales_District IN THE SEIS732_Team_28_Sales_Org AND LOAN THEM INTO THE SALES_ORG in the SEIS732_Team_28_Star_Schema
+
+00. DELETE SALES_ORG OLAP table
+
+1. Drop / recreate Stage_Sales_Area table
+2. Drop / recreate Stage_Sales_Mgr table
+3. Drop / recreate Stage_Sales_Territory table
+4. Drop / recreate Stage_Sales_District table
+5. Drop and Recreate view extract_Sales_Area before staging
+6. Drop and Recreate view extract_Sales_Mgr before staging
+7. Drop and Recreate view extract_Sales_Territory before staging
+8. Drop and Recreate view extract_Sales_District before staging
+9. Drop and Recreate view extract_Staged_SALES_ORG before staging (to join the FOUR staged tables together)
+10. Extract from OLTP and load into the extract_Sales_Mgr view and load into Stage_Sales_Mgr table
+11. Extract from OLTP and load into the extract_Sales_District view and load into Stage_Sales_District table
+12. Extract from OLTP and load into the extract_Sales_Area view and load into Stage_Sales_Area table
+
+13. Extract from OLTP and load into the extract_Sales_Territory view and load into Stage_Sales_Territory table
+
+14. Extract from the view and load into the Extract from the view and load into the SALES_ORG DIM in the SEIS732_Team_28_Star_Schema 
