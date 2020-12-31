@@ -1,4 +1,4 @@
-# ETL of Vechicles Incorporate
+# ETL of Vehicles Incorporate
 
 This is a course project of Data Warehousing & Business Intel
 
